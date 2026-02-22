@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image mapping. </title>
+
+</head>
+<body>
+    
+<!--
+    
+Image map : It means creating an area in the image and apply the javescripts / 
+
+SYANTAXING: 
+< area shape ="____" chords="_,_,_,_" alt="___" herel="_____" other attributes ="____ ">
+                |               |
+            rect, circle     Coordinates
+            polygon, etc..
+
+
+Coordinates : These can be found using the ms word , paint or external websites. 
+
+-->
+
+
+
+<!--
+                            IMPORTANT Attributes. 
+
+
+1.----------Background color:  
+                                
+                            <p style ="background-image: url('___'); "
+
+NOTE: Here BG image will be repeated if image is smaller than the screen , 
+        It repeate untill it cover whole space in the screen. 
+    
+        Other attributes with the background color : 
+            background-image:url(''); background-repeat:no-repeat;
+            background-attachment:fixed; ---- It make sure image always covered. 
+            background-size:Cover; ---- It cover entire element 
+
+
+2. 
+<picture>
+    <source media="(min-width:__px)" srcset="url_1">
+    <source media="(min-width:__px)" srcset="url_2">
+    <img src="URL " style="width:auto;">
+</picture>
+
+<picture> : It is used to show different image with respect to the diff. device width , 
+            length , height etc...
+srcset= URL of the image . 
+media= min or max with . 
+
+NOTE: Always use image tag within picture tag because just in case our min. or max. 
+device parameters fails then by default image tag's image will be shown in webpage. 
+
+-->
+
+
+
+
+</body>
+</html>

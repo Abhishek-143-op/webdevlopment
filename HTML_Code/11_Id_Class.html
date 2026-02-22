@@ -1,0 +1,80 @@
+<!--
+🔹 1. Class (class)
+
+-Used to group multiple elements under one name.
+-You can apply the same CSS style to many elements.
+-Denoted with a dot (.) in CSS.
+
+
+🔹 2. ID (id):
+
+-Unique identifier → only one element should have a given id.
+-Denoted with a hash (#) in CSS.
+
+
+3. Multiple Classes
+
+-An element can have more than one class (separated by spaces).
+-It inherits styles from all classes.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class and id's</title>
+    <style>
+
+        /*styling for classes */
+  .highlight {
+    color: white;
+    background-color: darkblue;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+
+  /*Styling the id */
+   #special {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+  }
+/*Styling the element contain multiple classes. Multiple classes separated by space as shown  */
+  .big-text {
+    font-size: 24px;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<p class="highlight">This is a highlighted paragraph.</p>
+<p class="highlight">This is also highlighted.</p>
+
+<p id="special">This is a unique paragraph styled by ID.</p>
+
+<p class="highlight big-text">This has two classes.</p>
+
+
+<!--Bookmarks using the id's -->
+
+<h2>Table of Contents</h2>
+<ul>
+  <li><a href="#section1">Go to Section 1</a></li>
+  <li><a href="#section2">Go to Section 2</a></li>
+  <li><a href="11_1_Id_Class.html#section3">Go to section 3 in next page</a></li>
+</ul>
+<!--Calling bookmark inside the page -->
+<!-- Section 1 -->
+<h3 id="section1">Section 1</h3>
+<p>This is the first section of the page.</p>
+
+<!-- Section 2 -->
+<h3 id="section2">Section 2</h3>
+<p>This is the second section of the page.</p>
+
+
+
+
+</body>
+</html>

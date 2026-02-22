@@ -1,0 +1,53 @@
+/* CSS : It stands for the Cascading style sheet. 
+                                
+                                    |-----Content inside the block. == font size , font weight,color
+<o> CSS types of properties-------- |-----Block in which content kept.== height, width , border , margin
+                                    |-----Layout : Where the block kept.==flexbox, Gird and Position. 
+
+
+<o>                 Rules for writing the codes in CSS >>>
+        Selector{
+                    Css property : Property value ;
+
+        }
+                    Example: 
+
+                    h1{
+                        color: blue;
+                        font-size: 40px;
+                        ---------------
+                               |
+                        Here key value pair are known as declaration . 
+                    }
+
+
+<o>         Always keep in mind while Learning CSS: 
+    1. CSS properties are too much not necessary to learn all but remember and 
+        When we want to use property use the MDN documentation or Take AI help.
+    2. CSS layout may not work in all devices it fails in some of the devices 
+        so it will be challenging to code With respect to diff. devices width . 
+    
+
+<o>         Types of way for including the CSS in webpage :
+        1. Inline : Directly using the style attribute with tag and then property: value; 
+        2. Internal. : Using style tag inside the head tag == Then add property: value;
+        3. External. =======[RECOMENDED]: Use completely new Css file then connect inside the head
+                                            of the html file using the links . 
+
+[Why to prefer to External CSS : 
+
+If there are 100 of webpages connected to one main page then by using the external CSS file 
+then style is added to all the 100 of webpages instead of only to 1 . 
+     and 
+If we want to change the style of the webpage then by changing the external file link 
+the whole webpage appearance will be changed .
+
+            Not possible in the inline and internal CSS. 
+
+]
+*/
+
+h1{
+    color :bisque;/* Changes the color of the text in h1 tag . */
+}
+

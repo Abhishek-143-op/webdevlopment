@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            .intro {
+        color: blue;
+        font-size: 18px;
+
+            .heading {
+         color: darkgreen;
+         text-align: center;
+
+            .card {
+         border: 1px solid #ccc;
+        padding: 10px;
+            .btn {
+          padding: 10px 15px;
+          border: none;
+          cursor: pointer;
+        }
+
+            .primary {
+          background-color: blue;
+          color: rgb(255, 255, 255);
+        }
+
+            .secondary {
+          background-color: gray;
+          color: white;
+        }
+
+        }
+
+            .highlight {
+          background-color: yellow;
+        }
+
+        }
+
+        }
+    </style>
+</head>
+<body>
+
+
+<!--    Id: Unique Id to the element for the CSS Styling. 
+*************************************SYNTAX********************************************
+                |                                                 |          
+                | <style>                                         |             
+                |         #ID_NAME{                               |                 
+                |                                                 |             
+                |                   CSS Properties/ Attributes.   |       
+                |                                                 |
+                |                   }                             |              
+                |                                                 |
+                |                                                 |         
+*****************************************************************************************
+
+    -->
+    <!--Calling bookmark outside the page . -->
+<h2 id="section3"> Chapter 3</h2>
+
+<p>This is the 3rd section of the page. </p>
+
+
+
+
+
+
+<!--                CLASS                   -->
+                <!--
+Class : Unique identity for the similar elements for styling using Css. 
+    |
+    |-- TAG = <tag class = "__">
+
+    Concept of the multiple classes : 
+        Each elements can have multiple classes and we can style each class element
+         using the CSS. ;
+
+***********************************SYNTAX -FOR STYLING CLASS*******************************
+                    |    <style>                                    |
+                    |       .class_name{                            |
+                    |                                               |
+                    |           Attributes /CSS Properties .        |
+                    |                                               |
+                    |       }                                       |
+                    |   </style>                                    |
+********************************************************************************************
+    -->
+
+    <p class="intro">Welcome to my website!</p>
+    <!-- This single intro  class is styled in internal CSS.-->
+
+    <h2 class="heading">About Us</h2>
+    <h2 class="heading">Our Services</h2>
+    <h2 class="heading">Contact</h2>
+        <!--here multiple elements has the same class. -->
+
+    <div class="card highlight">This is a featured post</div>
+        <!--Here single element has multiple class. -->
+
+
+        <button class="btn primary">Submit</button>
+        <button class="btn secondary">Cancel</button>
+
+
+</body>
+</html>
+<!--
+#####################Note######## Watch it without word wrap (without alt+z)##############
+Difference between class and id in html .
+| Feature                | **id**                                                             | **class**                                                  |
+| ---------------------- | ------------------------------------------------------------------ | ---------------------------------------------------------- |
+| **Definition**         | A unique identifier for a single HTML element.                     | A reusable name used to group multiple elements.           |
+| **Symbol Used in CSS** | `#` (hash)                                                         | `.` (dot)                                                  |
+| **Usage Count**        | Can be used **only once per page**.                                | Can be used **many times** on different elements.          |
+| **Purpose**            | Used to identify one specific element (for styling or JavaScript). | Used to apply same style or behavior to multiple elements. |
+| **Example in HTML**    | `<p id="intro">Hello!</p>`                                         | `<p class="intro">Hello!</p>`                              |
+| **Example in CSS**     | `#intro { color: blue; }`                                          | `.intro { color: blue; }`                                  |
+| **JavaScript Access**  | `document.getElementById("intro")`                                 | `document.getElementsByClassName("intro")`                 |
+| **Uniqueness**         | Must be unique in a document.                                      | Can be repeated for multiple elements.                     |
+| **Priority**           | Has **higher priority** than class in CSS.                         | Has **lower priority** than id.                            |
+
+-->

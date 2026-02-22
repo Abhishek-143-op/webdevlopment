@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Table Example</title>
+
+    <!-- CSS for styling the table -->
+    <style>
+        /* Table size and overall style */
+        table {
+            width: 80%;                 /* table-size: width of table */
+            border-collapse: collapse;  /* removes double borders between cells */
+            margin: 20px auto;          /* center table on page */
+        }
+
+        /* Border style for table, header, and cells */
+        table, th, td {
+            border: 2px solid black;   /* border-size + border-type */
+            border-radius: 8px;        /* rounded corners */
+        }
+
+        /* Table header style */
+        th {
+            background-color: #f2f2f2;  /* light gray background */
+            text-align: center;         /* center text */
+            font-weight: bold;          /* bold text */
+        }
+
+        /* Table caption style */
+        caption {
+            caption-side: top;           /* can be top or bottom */
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        /* Padding inside cells */
+        td, th {
+            padding: 12px;              /* cell-padding */
+        }
+
+        /* Spacing between rows using CSS */
+        tr {
+            height: 50px;               /* row height */
+        }
+    </style>
+</head>
+<body>
+
+<!-- TABLE BEGINS -->
+<table>
+
+    <!-- Caption of the table -->
+    <caption>Student Information Table</caption>
+
+    <!-- Table header row -->
+    <tr>
+        <th>Roll No</th>   <!-- table-header -->
+        <th>Name</th>
+        <th>Course</th>
+        <th>Marks</th>
+    </tr>
+
+    <!-- Table data rows -->
+    <tr>
+        <td>1</td>
+        <td>Abhishek</td>
+        <td>CSE</td>
+        <td>95</td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Anjali</td>
+        <td>ECE</td>
+        <td>89</td>
+    </tr>
+
+    <!-- Example of colspan (merging 2 columns into 1) -->
+    <tr>
+        <td>3</td>
+        <td colspan="2">Rahul (CSE & ECE)</td>  <!-- colspan -->
+        <td>90</td>
+    </tr>
+
+    <!-- Example of rowspan (merging 2 rows into 1) -->
+    <tr>
+        <td rowspan="2">4</td>   <!-- rowspan -->
+        <td>Sneha</td>
+        <td>ME</td>
+        <td>88</td>
+    </tr>
+    <tr>
+        <td>Vikram</td>
+        <td>ME</td>
+        <td>92</td>
+    </tr>
+
+</table>
+<!-- TABLE ENDS -->
+
+</body>
+</html>

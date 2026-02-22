@@ -1,0 +1,147 @@
+/*
+1. Font weight : It decides the boldness of the text . 
+ 
+    SYNTAX:
+       ----------------------
+       | font-weight:Value; |
+       -----------------------
+                      |
+        Generally : 100, 200, 300, 400, 500 ,600 , 700, 800 , 900            
+            400 = It is by default normal text boldness. 
+            700 = It is by default for heading boldness. 
+        
+            Guidance for using the font-weight:[100-900]
+                Use the Values : 500-900 = For Headings. 
+                Use the Values : 100-400 = For Normal/Other texts. 
+
+*/
+
+#heading {
+    font-weight: 700 ; /*Generally in between 500 - 900 for headings texts. */
+}
+
+#normal-text {
+    font-weight:300; /*Generally in between 100-400 for normal texts. */
+}
+/*
+2. Text-Decoration : Property for How text appear in the webpage like in dotted format, 
+                     dashed format, underlined, overlined or other shown below. 
+
+    Synatx:
+
+      -----------------------------------------------
+      |  text-decoration : Underlined Color Dashed; |
+      -----------------------------------------------  
+
+
+*******************************************************************************************
+    <o> other in place of underlined : None (Default) , underlined , overlined , line-through.
+    <o> other in place of color: Named (color name), HEX ,HEXA, RGB , RGBA .
+    <o> other in place of Dashed : double, solid , dotted, dashed, wavy
+*******************************************************************************************
+
+
+GENERAL USECASE : 
+ Used to remove the underline from default anchor tags. 
+  by using  : 
+            text-decoration:None;
+
+*/
+#sample-Decoration-1{
+    text-decoration:line-through blue dotted;
+}
+#sample-Decoration-2{
+    text-decoration:double red underline; 
+}
+
+/*Font style : It is property used to style the font . 
+
+Syntax: 
+        font-style: itallic ;
+    <o> Other things used in the font styling : 
+        itallic , normal (default), oblique, oblique __degree
+
+        Oblique means creating the tilt to the original text  at some defined degree.
+
+
+        */
+#font-styling-1{
+    font-style :oblique;
+
+}
+
+#font-styling-2{
+    font-style:oblique 100deg;
+}
+
+/*Text Transformation : Used to perform basic operation on the text. 
+
+Syntax: 
+    text-transform: uppercase;
+
+Other things can be used instead of uppercase: 
+None(DEFAULT) , lowercase, upercase, captilize. 
+*/
+#text-transformation-1{
+    text-transform:uppercase;
+
+}
+    
+#text-transformation-2{
+    text-transform:capitalize;
+
+}
+
+/*
+Font-style: Used to sytle the list .
+
+Syntax :
+        font-style: disc;
+
+<o> Other things instead of the disc : circle  , square, disc(default), none , decimal(By default)
+
+    General usecase: It is generally used to styling the list by chosing font-style : none;
+
+    */
+
+#font-style{
+    font-style:square;
+}
+
+#text-decoration-1{
+    /* dotted */
+text-decoration: underline dotted red;
+
+}
+#text-decoration-2{
+
+
+/* double */
+text-decoration: underline double green;
+
+
+
+}
+#text-decoration-3{
+
+
+/* dashed */
+text-decoration: underline dashed blue;
+
+
+
+}
+#text-decoration-4{
+
+/* wavy */
+text-decoration: underline wavy purple;
+
+
+
+}
+#text-decoration-5{
+
+/* solid (default) */
+text-decoration: underline solid black;
+
+}

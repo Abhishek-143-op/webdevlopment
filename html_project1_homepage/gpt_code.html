@@ -1,0 +1,342 @@
+
+<!--I Oly copied without knowing much of the code  as for now I only know only html 
+
+THEREFORE IGNOORE THIS CODE... 
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio — Practice Project</title>
+
+  <style>
+    /* PAGE BORDER (whole page) */
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      border: 6px solid #222;      /* <-- whole-page border */
+      margin: 16px;                /* space between browser edge & border */
+      padding: 24px;               /* space inside the border */
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      line-height: 1.45;
+      background: #f7f7f7;
+      color: #111;
+    }
+
+    /* Simple layout & reset for links */
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 12px;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* HERO */
+    #hero {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      background: white;
+      padding: 18px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+    #hero img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #eaeaea;
+    }
+    #hero h1 { margin: 0 0 6px 0; font-size: 1.6rem; }
+    #hero p { margin: 0; color: #444; }
+
+    main { margin-top: 18px; display: grid; gap: 18px; }
+
+    section.card {
+      background: white;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    }
+
+    /* Skills as horizontal badges */
+    .skills {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .skill {
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: #eef4ff;
+      font-size: 0.9rem;
+      border: 1px solid #d8e6ff;
+    }
+
+    /* Projects cards row */
+    .projects-list {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .project {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #eee;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+    th, td {
+      text-align: left;
+      padding: 8px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    th { background: #fafafa; }
+
+    /* Contact form */
+    form label { display: block; margin: 8px 0 4px; font-weight: 600; font-size: 0.95rem; }
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      background: #0b76ff;
+      color: white;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 18px;
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    /* Simple modal (hidden by default) */
+    .modal {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(0.96);
+      background: white;
+      padding: 18px;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      display: none;
+      z-index: 999;
+      min-width: 260px;
+      text-align: center;
+    }
+    .modal.show { display: block; transform: translate(-50%,-50%) scale(1); }
+
+    /* Responsive: stack hero vertically on small screens */
+    @media (max-width: 640px) {
+      #hero { flex-direction: column; text-align: center; }
+      header { flex-direction: column; align-items: start; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <strong>Abhishek Portfolio</strong>
+      <div style="font-size:0.9rem;color:#666">Web · Coder · Student</div>
+    </div>
+
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="card" aria-labelledby="hero-title">
+      <img src="https://via.placeholder.com/150" alt="Your photo" />
+      <div>
+        <h1 id="hero-title">Hi — I'm Abhishek</h1>
+        <p>I build small projects to learn web development. This page practices core HTML, CSS & JavaScript.</p>
+        <p style="margin-top:8px"><a href="#projects">See my projects →</a></p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="card" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>A short paragraph about yourself (education, interests, current focus).</p>
+
+      <h3>Highlights</h3>
+      <ul>
+        <li>Learning C++ & Web Development</li>
+        <li>Making mini projects: calculators, portfolio, to-do lists</li>
+        <li>Practice: HTML semantic tags, forms, layout</li>
+      </ul>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="card" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <div class="skills" role="list">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">C++</span>
+        <span class="skill">Git</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="card" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+
+      <div class="projects-list">
+        <div class="project">
+          <h4>Portfolio Page</h4>
+          <p>Single page HTML/CSS project (this page).</p>
+          <a href="#contact">Contact me</a>
+        </div>
+
+        <div class="project">
+          <h4>Todo App</h4>
+          <p>Small JS app to add/remove tasks.</p>
+          <a href="#" target="_blank">Demo</a>
+        </div>
+      </div>
+
+      <h3 style="margin-top:12px">Project Summary</h3>
+      <table aria-label="Project table">
+        <thead>
+          <tr><th>Project</th><th>Tech</th><th>Link</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Portfolio</td>
+            <td>HTML, CSS</td>
+            <td><a href="#hero">This page</a></td>
+          </tr>
+          <tr>
+            <td>Todo App</td>
+            <td>HTML, JS</td>
+            <td><a href="#">Demo</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <form id="contactForm" autocomplete="on" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write a short message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div>© <span id="year"></span> Abhishek — Built for practice</div>
+  </footer>
+
+  <!-- Simple modal -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <h3 id="modalTitle">Message sent!</h3>
+    <p>Thanks — I will reply soon.</p>
+    <button id="closeModal">Close</button>
+  </div>
+
+  <script>
+    // Fill current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // FORM: basic validation and showing modal (no server submission)
+    const form = document.getElementById('contactForm');
+    const modal = document.getElementById('modal');
+    const closeModal = document.getElementById('closeModal');
+
+    function isValidEmail(email) {
+      // simple email pattern (for practice only)
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // stop page reload so you can practice JS handling
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!name || !email || !message) {
+        alert('Please fill all required fields.');
+        return;
+      }
+      if (!isValidEmail(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      // Show modal to indicate success
+      modal.classList.add('show');
+
+      // Reset form fields (optional)
+      form.reset();
+    });
+
+    closeModal.addEventListener('click', function () {
+      modal.classList.remove('show');
+    });
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') modal.classList.remove('show');
+    });
+  </script>
+
+</body>
+</html>

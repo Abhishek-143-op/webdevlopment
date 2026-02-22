@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Div and Span Example</title>
+</head>
+<body>
+
+  <!-- ===============================
+       1️⃣ DIV TAG
+       =============================== -->
+  <!-- 
+       ➤ <div> is a block-level element.
+       ➤ It is used to group other HTML elements together.
+       ➤ Block-level means it takes full width of the container by default.
+       ➤ Commonly used for sections, layouts, or containers.
+  -->
+  <div style="background-color: lightblue; padding: 10px;">
+    <h2>This is a DIV container</h2>
+    <p>All content inside a div behaves as a block.</p>
+  </div>
+  <br>
+
+  <!-- ===============================
+       2️⃣ SPAN TAG
+       =============================== -->
+  <!-- 
+       ➤ <span> is an inline element.
+       ➤ It is used to style or manipulate a small portion of text inside other elements.
+       ➤ Inline means it does not start on a new line and only takes the width of its content.
+  -->
+  <p>This is a paragraph with a <span style="color: red; font-weight: bold;">highlighted span text</span> inside it.</p>
+  <br>
+
+  <!-- ===============================
+       3️⃣ DIFFERENCE BETWEEN DIV AND SPAN
+       =============================== -->
+  <!-- 
+       1. div = block-level, span = inline
+       2. div is used for grouping large sections
+       3. span is used for styling small inline text or elements
+       4. Both can use id, class, and style attributes
+  -->
+
+  <!-- ===============================
+       4️⃣ RELATED TAGS (SECTIONING ELEMENTS)
+       =============================== -->
+  <!-- 
+       These are also block-level elements but have semantic meaning:
+       1. <header> - defines header of a page or section
+       2. <footer> - defines footer of a page or section
+       3. <section> - defines a section in a document
+       4. <article> - defines independent content (like a blog post)
+       5. <aside> - defines side content, like a sidebar
+       6. <main> - main content of the page
+  -->
+
+  <header style="background-color: #333; color: white; padding: 10px;">
+    <h1>Header Section</h1>
+  </header>
+
+  <section style="background-color: #f4f4f4; padding: 10px;">
+    <h2>Section Example</h2>
+    <p>This section groups related content together.</p>
+  </section>
+
+  <article style="background-color: #e2e2e2; padding: 10px;">
+    <h3>Article Example</h3>
+    <p>This is independent content, like a blog post.</p>
+  </article>
+
+  <aside style="background-color: #ccc; padding: 10px;">
+    <p>Aside content, like sidebar or additional info.</p>
+  </aside>
+
+  <footer style="background-color: #333; color: white; padding: 10px;">
+    <p>Footer Section</p>
+  </footer>
+
+  <!-- ===============================
+       5️⃣ QUICK SUMMARY
+       =============================== -->
+  <!-- 
+       DIV:
+         - Block-level
+         - Groups multiple elements
+         - No semantic meaning
+
+       SPAN:
+         - Inline
+         - Styles small portions of text
+         - No semantic meaning
+
+       Semantic block-level tags:
+         - header, footer, section, article, aside, main
+         - Provide meaning to sections of the webpage
+  -->
+
+</body>
+</html>

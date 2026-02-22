@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iframe Example</title>
+</head>
+<body>
+
+  <!--
+    📘 What is an iframe?
+    The <iframe> (Inline Frame) tag is used to embed another webpage
+    or external content inside your current HTML page.
+  -->
+
+  <!-- Example 1: Basic iframe -->
+  <h2>Example 1: Displaying a website using iframe</h2>
+  <iframe src="https://www.wikipedia.org" 
+          width="600" height="400">
+  </iframe>
+  <!-- 
+    ➤ src = the URL of the page you want to display.
+    ➤ width & height = size of the frame.
+  -->
+
+
+  <!-- Example 2: Adding a border and title -->
+  <h2>Example 2: Iframe with border and title</h2>
+  <iframe src="https://www.example.com" 
+          width="600" height="300" 
+          style="border:2px solid black;" 
+          title="Example Website">
+  </iframe>
+  <!-- 
+    ➤ style = used to add CSS (like border, color, etc.).
+    ➤ title = describes the content (helps in accessibility).
+  -->
+
+
+  <!-- Example 3: Using iframe to embed a YouTube video -->
+  <h2>Example 3: Embedding a YouTube video</h2>
+  <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+          title="YouTube video player" 
+          frameborder="0"
+          allowfullscreen>
+  </iframe>
+  <!-- 
+    ➤ frameborder = 0 removes the default border.
+    ➤ allowfullscreen = allows full-screen mode for videos.
+  -->
+
+
+  <!-- Example 4: Restricting iframe (for security) -->
+  <h2>Example 4: Restricted iframe</h2>
+  <iframe src="https://www.example.com" 
+          width="500" height="200" 
+          sandbox>
+  </iframe>
+  <!-- 
+    ➤ sandbox attribute adds security restrictions (disables scripts, forms, etc.).
+  -->
+
+</body>
+</html>

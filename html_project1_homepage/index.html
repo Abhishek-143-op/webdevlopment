@@ -1,0 +1,142 @@
+<!--ONLY HTML WITHOUT ANY OTHER LANGUAGE 
+
+PROJECT : 
+
+🎯 Project Title: “My Personal Homepage”
+
+This project will include:
+     1. A page border (using table layout)
+     2. Header with title
+     3. Navigation links
+     4. About section with paragraph and image
+     5. Skills (lists)
+     6. Education (table)
+     7. Contact form
+     8. Footer
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage Portfolio (only html) </title>
+    
+</head>
+<body>
+    <!--Without CSS we create border of the -->
+    <table border="5" width="100%" cellspacing="10" cellpadding="10">
+        <tr>
+            <td>
+                <!--Header section.-->
+                <center>
+                    <h1>Welcome to My Homepage . </h1>
+                    <h3>by Abhishek.</h3>
+                </center>
+                <hr>
+                <!--Navigation section . -->
+                <p align="center">
+                    <a href="#about">About</a>|
+                    <a href="#Skills">Skills</a>|
+                    <a href="#Education">Education</a>|
+                    <a href="#Contact">Contact</a>
+                </p>
+               <hr> 
+               <!--About me section . -->
+                <h2 id="about">
+                    About me 
+                </h2>
+                <p>
+                    Hello, My name is Abhishek . I am Btech Student who 
+                    tries to create webpages for learing then within few months I 
+                    will create eye catching webpages , apps, other application. 
+
+                    The below is my photo :
+                </p>
+
+                <!--Image of mine in the about me Section -->
+                <img src="My_photo.jpej" title="Abhishek Photo" alt="My Photo">
+
+                <hr>
+                <!--Skills section -->
+                <h2 id="Skills">
+                    Skills 
+                </h2>
+                <p>
+                    The few of the skills I am going to learn in Upcoming days.
+                </p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>WebDev Frameworks</li>
+                    <li>Python</li>
+                    <li>DSA In specific Language. </li>
+                </ul>
+                <hr>
+                <!--Education section . -->
+                <h2 id="Education">
+                    Educations Details
+                </h2>
+                <!--Creating table inside the cell of the table. -->
+                <table border="5" width="50%" cellspacing="0" cellpading="5">
+                    <caption>Abhishek Education details </caption>
+                    <tr>
+                        <th>Class</th>
+                         <th>Institute</th>
+                         <th>Percentage</th>
+                         <th>Year</th>
+                    </tr>
+                    <tr>
+                        <td>Btech</td>
+                        <td>Govt degree College.</td>
+                        <td>80%</td>
+                        <td>2028</td>
+                    </tr>
+                    <tr>
+                        <td>12th</td>
+                        <td>Govt Sen. Sec School Gharana.</td>
+                        <td>75%</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td>10th</td>
+                        <td>Spring Dale Sen Sec School , Bhadumahadev. </td>
+                        <td>82%</td>
+                        <td>2020</td>
+                    </tr>
+                </table>
+                <hr>
+
+                <!--Contact me section. -->
+                <h2 id="Contact">Contact me </h2>
+                <form>
+                    <label>Enter UserName:</label><br>
+                    <input type="text" name="UserName" placeholder="Radha"><br><br>
+
+                    <label>Enter Email:</label><br>
+                    <input type="email" name="Email" placeholder="abc@email.com"><br><br>
+
+                    <label>Enter Message: </label><br>
+                    <textarea rows="5" cols="40" name="message" placeholder="Message Here"></textarea><br><br>
+
+                    <input type="submit" value="send">
+                    <input type="reset" value="clear">
+
+                </form>
+                <hr>
+                <!-- Footer -->
+                     <center>
+                       <p>© 2025 Abhishek | Made only with HTML</p>
+                     </center>
+            </td>
+
+
+        </tr>
+      
+
+    </table>
+</body>
+</html>

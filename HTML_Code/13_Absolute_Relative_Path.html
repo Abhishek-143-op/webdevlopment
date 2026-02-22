@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Absolute vs Relative Path in HTML</title>
+</head>
+<body>
+
+  <!-- 
+    📘 CONCEPT OVERVIEW:
+    In HTML, when you link to images, CSS, JS, or other pages,
+    you use a "path" to tell the browser *where* the file is located.
+
+    There are two main types of paths:
+      1️⃣ Absolute Path
+      2️⃣ Relative Path
+  -->
+
+
+  <!-- ========================================================== -->
+  <!-- 🟢 1️⃣ ABSOLUTE PATH -->
+  <!-- ========================================================== -->
+
+  <!-- 
+    ➤ An Absolute Path gives the *full URL* (complete address)
+      to reach the file — including protocol (http/https), domain name,
+      and file location.
+
+    ➤ It works from *anywhere* (because it’s a full web address).
+
+    ➤ Example Use Case:
+      When you want to load an image, video, or file 
+      that is hosted on another website or server.
+  -->
+
+  <h2>Example of Absolute Path</h2>
+  <img src="https://www.w3schools.com/html/img_chania.jpg" 
+       alt="Beautiful Landscape" width="300">
+  <!-- 
+    Here, the image is loaded from the full web URL.
+    Even if you move this HTML file anywhere, this image will still load
+    because the path is absolute (fixed on the internet).
+  -->
+
+
+  <!-- ========================================================== -->
+  <!-- 🟡 2️⃣ RELATIVE PATH -->
+  <!-- ========================================================== -->
+
+  <!-- 
+    ➤ A Relative Path gives the *location of the file*
+      relative (in relation) to the current HTML file’s folder.
+
+    ➤ It does NOT include the full domain or protocol.
+
+    ➤ Example Use Case:
+      When you are linking to files *within your own project folder*.
+
+    ➤ It makes your website *portable* (works on any computer or server
+      as long as the folder structure is same).
+  -->
+
+  <h2>Example of Relative Path</h2>
+  <!-- Suppose your project structure is:
+        📂 my_website/
+        ├── index.html
+        └── images/
+            └── photo.jpg
+  -->
+
+  <img src="images/photo.jpg" alt="Local Project Image" width="300">
+  <!-- 
+    Here, the browser looks for 'photo.jpg' inside the 'images' folder
+    which is in the same directory as this HTML file.
+  -->
+
+
+  <!-- ========================================================== -->
+  <!-- 🔵 3️⃣ WHEN TO USE WHAT -->
+  <!-- ========================================================== -->
+
+  <!-- 
+    ✅ Use ABSOLUTE PATH when:
+       - The file or image is hosted on another website.
+       - You need to link to external resources (CDNs, APIs, etc.).
+       Example: External image, YouTube video, or Google Fonts.
+
+    ✅ Use RELATIVE PATH when:
+       - The file is stored within your own project folder.
+       - You are working offline or on a local server.
+       - You want your site to work after uploading it anywhere
+         (no fixed internet address dependency).
+  -->
+
+
+  <!-- ========================================================== -->
+  <!-- 🔴 4️⃣ EXAMPLES OF DIFFERENT RELATIVE PATHS -->
+  <!-- ========================================================== -->
+
+  <!-- 
+    ➤ Same Folder: 
+      <img src="photo.jpg">
+      → File is in the same folder as the HTML file.
+
+    ➤ Inside Subfolder:
+      <img src="images/photo.jpg">
+      → File is inside 'images' folder.
+
+    ➤ Go Up One Folder:
+      <img src="../photo.jpg">
+      → "../" means go up one level.
+
+    ➤ Go Up Multiple Folders:
+      <img src="../../assets/photo.jpg">
+      → Go up two folders and then into 'assets' folder.
+  -->
+
+
+  <!-- ========================================================== -->
+  <!-- 🧠 QUICK SUMMARY -->
+  <!-- ========================================================== -->
+  <!-- 
+    ➤ Absolute Path = Full Internet Address (starts with http:// or https://)
+    ➤ Relative Path = Local Folder Address (based on your file structure)
+    ➤ Relative is best for your own website development.
+    ➤ Absolute is best for linking to external sources.
+  -->
+
+</body>
+</html>

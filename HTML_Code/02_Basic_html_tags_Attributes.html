@@ -1,0 +1,99 @@
+<!--This contains all the basic html tags with their basic attributes . -->
+
+
+<!--
+Basic info. Must be known with before reading this tag . 
+
+1. Block-line tags : Create invisible block in webpage further in which tag data is added 
+                     to block and new tag data always starts from next block/ new line.
+                
+2. Inline tags : Elements takes space according the data present in them. Here if      
+                 we add another tag / element then data will be start just after that
+                 element  . will not start from new block / Line .  
+
+3. Element : <tag_here> data here </tag_here> like <html> ... </html> , <p> ... </p> etc. 
+
+4. Attribute: Conatain extra info about the Elements . like src="" , style="", title="",
+                alt="" etc.
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic_html_tags</title>
+</head>
+<body>
+
+<h1>
+    This is the Basic Html webpage with basic html tags and their attributes . 
+</h1>
+
+<hr>
+
+<pre>
+    Pre tag contain the text like paragraph tag . but 
+    in the preserved format. Therefore here format of writting the text matters . 
+</pre>
+
+<div>  
+    <a style = " background-color:aquamarine; text-align:center; " href ="youtube.com" title = "Used anchor tag with youtube link  " alt=" Youtube Link" taget ="_Blank"> Youtube </a>
+</div>
+    
+<div>
+    <img style = " background-color:aquamarine; text-align:center; " src= "Path of image , Absolute or relative " alt ="Image of book " title ="This is the image of the python book " height ="100px" width ="50px"> 
+</div>
+
+<div><!--      This is how multiple properties  -|-   written in a attribue  -->
+    <video style = " background-color:aquamarine; text-align:center; " src="Video path " alt ="video of T-REC " title ="Python one shot course" height ="100px" width ="100 px" controls Autoplay muted loop > </video>
+</div>
+
+<!--
+
+
+*****************Style attriute can be used with almost all the tags *********************
+
+
+-->
+</body>
+
+</html>
+
+<!--
+1. <pre>:  It contain data just like <pre> tag but in a preserved format .         </pre>
+
+2. <div>: Create a invisible box which contain the data/ other 
+            tags, elements in it .                                                 </div>
+
+3. <a attributes > : Anchor tag contain links inside it                            </a>
+        |       (Basic attributes )
+        |
+        |--- a. href="Actual link " :  hyperlink refrence - Used to add link.
+        |--- b. Style ="Property :  Value; ": Used to style tag.  text-alignment
+        |                            , color, font-size, font-family, etc.
+        |--- c. title =" extra info . ": Used to show extra info. When cursor placed 
+        |                                    on element . 
+        |--- d. taget = Specifies where to open the link.
+                  |    1.  _self → (default) opens in the same tab.
+                  |    2.  _blank → opens in a new tab/window.
+                  |    3.  _parent / _top → used in frames.
+
+4. <img attributes > : Used to add image to webpage                         [Self Closing]
+            |       (Basic Attributes)
+            |
+            |--- a. src=" image path ": Used to add the source of image .
+            |--- b. style , alt , title , : Same as < a > attributes/
+            |--- c. Height ="__px " Used to define height of image .
+            |--- d. Width ="__px " Used to define width of image. 
+
+5. <videos attributes > : Used to add Videos to webpage                        </videos>
+            |         (Basic attributes )
+            |
+            |-- a. src, style, alt , title , height ,width : same as image attributes.
+            |-- b. Controls : Used to show controls Videos player . 
+            |-- c. autoplay : Autoplay the videos when webpage is loaded .
+            |-- d. muted : Mute the videos when videos is played manually unmuted by user.
+            |-- e. loop : Play the videos in loop in the webpage. 
+-->

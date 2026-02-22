@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Webpage Example</title>
+
+  <!-- 
+    📘 WHAT IS A RESPONSIVE WEBPAGE?
+    A responsive webpage automatically adjusts its layout,
+    images, and text to fit any screen size — desktop, tablet, or mobile.
+
+    ✅ Goal: One website that looks good on all devices.
+  -->
+
+  <!-- 
+    🧩 The <meta name="viewport"> tag above is *very important*.
+    It tells the browser how to control the page's dimensions and scaling.
+
+    Without it, your website might appear zoomed out or broken on mobile.
+  -->
+
+  <style>
+    /* 
+      🎨 BASIC STYLING FOR THE PAGE
+      These styles make the layout flexible using percentage widths
+      so it can shrink or expand depending on screen size.
+    */
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap; /* Allows items to move to next line on smaller screens */
+      padding: 10px;
+    }
+
+    .box {
+      flex: 1 1 300px; /* Flexbox property (grow, shrink, base width) */
+      margin: 10px;
+      padding: 20px;
+      background-color: #f1f1f1;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%; /* Image will resize according to the box */
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* 
+      📱 MEDIA QUERY:
+      Used to apply CSS only when the screen width is below a certain limit.
+      This makes your page adapt its design on mobile or small devices.
+    */
+    @media (max-width: 600px) {
+      header {
+        font-size: 18px;
+      }
+      .box {
+        flex: 1 1 100%; /* Boxes take full width on small screens */
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 
+    🏗️ STRUCTURE OF THE PAGE
+    A responsive page typically uses:
+    1️⃣ Header (for title or navigation)
+    2️⃣ Main content area (flexible sections)
+    3️⃣ Footer (for contact or copyright)
+  -->
+
+  <header>
+    <h1>My Responsive Webpage</h1>
+  </header>
+
+  <div class="container">
+    <!-- 3 sample content boxes -->
+    <div class="box">
+      <img src="https://via.placeholder.com/300" alt="Sample Image 1">
+      <p>This section adjusts to fit your screen.</p>
+    </div>
+
+    <div class="box">
+      <img src="https://via.placeholder.com/300" alt="Sample Image 2">
+      <p>Try resizing your browser to see the effect.</p>
+    </div>
+
+    <div class="box">
+      <img src="https://via.placeholder.com/300" alt="Sample Image 3">
+      <p>On mobile, these boxes stack vertically.</p>
+    </div>
+  </div>
+
+  <footer style="background:#222; color:white; text-align:center; padding:10px;">
+    <p>&copy; 2025 My Responsive Site</p>
+  </footer>
+
+  <!-- 
+    💡 HOW IT WORKS:
+    - The container uses Flexbox to arrange boxes side by side.
+    - When the screen width gets smaller than 600px,
+      the media query activates and makes boxes stack vertically.
+    - The images use max-width: 100%, so they shrink automatically.
+  -->
+
+</body>
+</html>
